@@ -8,7 +8,7 @@ const App = () => {
        <div id="wrapper">
       <div className="container">
         <div className="form-data">
-          <form  action="https://formspree.io/f/xknazovr"
+          <form  action="https://formspree.io/f/xknlgwpd"
   method="POST">
             <div className="logo">
               {/* <img src={pngegg} alt="img" /> */}
